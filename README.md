@@ -1,103 +1,70 @@
+# Getting Started with Create React App
 
-## 创建本地仓库
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- 创建.gitignore文件, 并配置忽略
-- git init  初始化工作区
-- git add .  添加到暂存区
-- git commit -m "init app"  提交版本区
+## Available Scripts
 
+In the project directory, you can run:
 
+### `yarn start`
 
-## 创建远程仓库
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- 指定仓库名称
-- 指定为公开的
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
+### `yarn test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 将本地仓库的代码推送到远程仓库
+### `yarn build`
 
-- git remote add origin https://gitee.com/zxfjd3g/code-210422.git : 记录远程仓库
-- git push -u origin master: 将master分支推送到远程
-- 创建dev分支并推送到远程
-  - git checkout -b dev
-  - git push origin dev
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 入职第一天
+### `yarn eject`
 
-- clone远程仓库到本地:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-  ```
-  git clone 仓库clone地址
-  ```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- 根据远程dev, 创建本地dev
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-  ```
-  git checkout -b dev origin/dev
-  ```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- 根据本地dev, 创建个人分支
+## Learn More
 
-  ```
-  git checkout -b xfzhang
-  ```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- 编码实现功能, 并提交(本地仓库)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-  ```
-  git add .
-  git commit -m "update README"
-  ```
+### Code Splitting
 
-- 将个人分支的修改合并到dev分支
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-  ```
-  git checkout dev
-  git merge xfhzhang
-  ```
+### Analyzing the Bundle Size
 
-- 将dev分支推送到远程
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-  ```
-  git push origin dev
-  ```
+### Making a Progressive Web App
 
-  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## 第二天工作流程
+### Advanced Configuration
 
-1. 拉取dev分支远程更新 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-   ```
-   git pull origin dev
-   ```
+### Deployment
 
-2. 切换到个人分支，将dev分支的更新合并到个人分支
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-   ```
-   git checkout xfzhang
-   git merge dev
-   ```
+### `yarn build` fails to minify
 
-3. 开发功能， 提交到本地仓库
-
-   ```
-   git add .
-   git commit -m "update"
-   ```
-
-4. 合并到dev分支
-
-   ```
-   git checkout dev
-   git merge xfzhang
-   ```
-
-5. 将dev分支的更新推送到远程
-
-   ```
-   git push origin dev
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
